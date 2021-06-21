@@ -33,11 +33,11 @@ Journal.prototype.tallyConsonants = function () {
 Journal.prototype.getTeaser = function () {
   const firstSentence = this.body.split(' ');
   let teaserSentence = firstSentence.slice(0, 8);
-  let finalSentence = teaserSentence.toString();
-  console.log(finalSentence);
+  let finishedSentence = teaserSentence.join(" ");
+  console.log(finishedSentence);
 }
 
-let newJournal = new Journal("hello there", "what's up how are you doing today sir hello")
+let newJournal = new Journal("hello there", "what's up, how are you doing today sir")
 newJournal.addAllWords();
 newJournal.tallyVowels();
 newJournal.tallyConsonants();
