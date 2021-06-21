@@ -1,4 +1,4 @@
-# PROJECT NAME
+# Journal Entry
 ## By Adrian Camacho & Dave Lindqvist
 
 ---
