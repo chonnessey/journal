@@ -23,8 +23,8 @@ Journal.prototype.tallyVowels = function () {
 }
 
 Journal.prototype.tallyConsonants = function () {
-  const totalTitleConsonants = this.title.replace(/[aeiou]/gi, "");
-  const totalBodyConsonants = this.body.replace(/[aeiou]/gi, "");
+  const totalTitleConsonants = this.title.replace(/[aeiou\W]/gi, "");
+  const totalBodyConsonants = this.body.replace(/[aeiou\W]/gi, "");
   const totalConsonants = totalTitleConsonants.length + totalBodyConsonants.length;
   this.consonants += totalConsonants;
   console.log(this.consonants);
