@@ -30,8 +30,16 @@ Journal.prototype.tallyConsonants = function () {
   console.log(this.consonants);
 }
 
-let newJournal = new Journal("hello there", "what's up")
+Journal.prototype.getTeaser = function () {
+  const firstSentence = this.body.split(' ');
+  let teaserSentence = firstSentence.slice(0, 8);
+  let finalSentence = teaserSentence.toString();
+  console.log(finalSentence);
+}
+
+let newJournal = new Journal("hello there", "what's up how are you doing today sir hello")
 newJournal.addAllWords();
 newJournal.tallyVowels();
 newJournal.tallyConsonants();
+newJournal.getTeaser();
 
